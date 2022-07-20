@@ -1,0 +1,10 @@
+[package]
+name = "hello-sqlx"
+version = "0.1.0"
+edition = "2021"
+
+
+[dependencies]
+sqlx = { version = "0.5", features = ["runtime-tokio-native-tls", "sqlite"] }
+tokio = { version = "1", features = ["full"] }
+tokio-stream = "0.1.9"
